@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def history
+  	@games = Game.where(:user_id => current_user.id).order('date_played DESC')
   end
 
   def log

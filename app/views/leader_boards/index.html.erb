@@ -1,0 +1,22 @@
+
+<h1>
+Leader Board
+</h1>
+<table>
+<tr>
+	<td>Rank</td>
+	<td>Name</td>
+	<td>Score</td>
+	<td>Games Played</td>
+</tr>
+<% @leader_board.each do |lb| %>
+<tr>
+	<td><%= lb.rank %></td>
+	<td><%= lb.name %></td>
+	<td><%= lb.score %></td>
+	<td><%= lb.games_played %></td>
+</tr>
+
+<% end %>
+</table>
+</div>
